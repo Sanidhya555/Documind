@@ -1,0 +1,532 @@
+[
+  {
+    "source_id": "employee_handbook",
+    "title": "Employee Handbook",
+    "sections": [
+      {
+        "passage_id": "leave_01",
+        "section": "Leave Policy",
+        "text": "Employees receive 18 days of paid annual leave per calendar year."
+      },
+      {
+        "passage_id": "leave_02",
+        "section": "Leave Policy",
+        "text": "Leave requests should be submitted at least five working days before the planned start date."
+      },
+      {
+        "passage_id": "leave_03",
+        "section": "Leave Policy",
+        "text": "Unused annual leave can be carried forward for up to five days into the next calendar year."
+      },
+      {
+        "passage_id": "remote_01",
+        "section": "Remote Work",
+        "text": "Employees may work remotely up to two days per week with manager approval."
+      },
+      {
+        "passage_id": "remote_02",
+        "section": "Remote Work",
+        "text": "Roles requiring on-site equipment access may have different remote-work arrangements."
+      },
+      {
+        "passage_id": "security_01",
+        "section": "Information Security",
+        "text": "Employees must report suspected phishing emails to security@example.test."
+      },
+      {
+        "passage_id": "security_02",
+        "section": "Information Security",
+        "text": "Employees must never share passwords with colleagues or support staff."
+      },
+      {
+        "passage_id": "expense_01",
+        "section": "Expenses",
+        "text": "Business travel expenses must be submitted within 30 calendar days after the trip ends."
+      },
+      {
+        "passage_id": "expense_02",
+        "section": "Expenses",
+        "text": "Receipts are required for individual expenses above 25 currency units."
+      },
+      {
+        "passage_id": "training_01",
+        "section": "Training",
+        "text": "New employees must complete security awareness training within 14 calendar days of their start date."
+      },
+      {
+        "passage_id": "equipment_01",
+        "section": "Equipment",
+        "text": "Company laptops must use full-disk encryption."
+      },
+      {
+        "passage_id": "equipment_02",
+        "section": "Equipment",
+        "text": "Company laptops must lock automatically after five minutes of inactivity."
+      },
+      {
+        "passage_id": "incident_01",
+        "section": "Incident Response",
+        "text": "Suspected loss of a company device must be reported to the IT service desk immediately and no later than one hour after discovery."
+      },
+      {
+        "passage_id": "meeting_01",
+        "section": "Meetings",
+        "text": "Agendas should be shared at least one working day before meetings longer than 30 minutes."
+      },
+      {
+        "passage_id": "procurement_01",
+        "section": "Procurement",
+        "text": "Software purchases costing more than 500 currency units require department-head approval before purchase."
+      },
+      {
+        "passage_id": "travel_01",
+        "section": "Travel",
+        "text": "Employees should use the approved booking portal for business travel."
+      },
+      {
+        "passage_id": "conduct_01",
+        "section": "Conduct",
+        "text": "Employees must report workplace safety concerns to their manager or the safety team."
+      },
+      {
+        "passage_id": "records_01",
+        "section": "Records",
+        "text": "Official records must be stored in the approved document repository."
+      },
+      {
+        "passage_id": "onboarding_01",
+        "section": "Onboarding",
+        "text": "New employees receive an onboarding checklist from Human Resources."
+      },
+      {
+        "passage_id": "support_01",
+        "section": "Support",
+        "text": "Internal support requests should include a short description, impact, and preferred contact method."
+      }
+    ]
+  },
+  {
+    "source_id": "it_runbook",
+    "title": "IT Operations Runbook",
+    "sections": [
+      {
+        "passage_id": "backup_01",
+        "section": "Backups",
+        "text": "Production databases are backed up every night at 02:00 UTC."
+      },
+      {
+        "passage_id": "backup_02",
+        "section": "Backups",
+        "text": "Production database backups are retained for 30 days."
+      },
+      {
+        "passage_id": "restore_01",
+        "section": "Recovery",
+        "text": "A restore request must include the database name, requested recovery point, business justification, and approving service owner."
+      },
+      {
+        "passage_id": "availability_01",
+        "section": "Availability",
+        "text": "The internal status page is status.example.test."
+      },
+      {
+        "passage_id": "availability_02",
+        "section": "Availability",
+        "text": "The incident commander posts major incident updates every 30 minutes."
+      },
+      {
+        "passage_id": "deploy_01",
+        "section": "Deployments",
+        "text": "Production deployments are paused on Fridays after 15:00 UTC unless an emergency change is approved."
+      },
+      {
+        "passage_id": "access_01",
+        "section": "Access Management",
+        "text": "Privileged access uses time-limited approvals and must be reviewed every 90 days."
+      },
+      {
+        "passage_id": "logs_01",
+        "section": "Logging",
+        "text": "Application logs are retained for 14 days."
+      },
+      {
+        "passage_id": "logs_02",
+        "section": "Logging",
+        "text": "Security audit logs are retained for 180 days."
+      },
+      {
+        "passage_id": "alerts_01",
+        "section": "Alerting",
+        "text": "A critical database alert must be acknowledged within 10 minutes."
+      },
+      {
+        "passage_id": "alerts_02",
+        "section": "Alerting",
+        "text": "Escalate a critical database alert if unresolved after 15 minutes."
+      },
+      {
+        "passage_id": "change_01",
+        "section": "Change Management",
+        "text": "Every production change must have a rollback plan."
+      },
+      {
+        "passage_id": "change_02",
+        "section": "Change Management",
+        "text": "Every production change must have a named owner and a linked change ticket."
+      },
+      {
+        "passage_id": "secrets_01",
+        "section": "Secrets",
+        "text": "Secrets must be stored in the approved secret manager."
+      },
+      {
+        "passage_id": "secrets_02",
+        "section": "Secrets",
+        "text": "Secrets must not be committed to source control."
+      },
+      {
+        "passage_id": "monitor_01",
+        "section": "Monitoring",
+        "text": "The sample API has a 99.9% monthly availability objective."
+      },
+      {
+        "passage_id": "oncall_01",
+        "section": "On-call",
+        "text": "The on-call engineer is the escalation contact for unresolved critical alerts."
+      },
+      {
+        "passage_id": "incident_01",
+        "section": "Incident Response",
+        "text": "Major incidents must have a named incident commander."
+      },
+      {
+        "passage_id": "deploy_02",
+        "section": "Deployments",
+        "text": "Emergency changes require an approving incident or change owner."
+      },
+      {
+        "passage_id": "logs_03",
+        "section": "Logging",
+        "text": "Logs should not contain passwords, access tokens, or full document contents."
+      }
+    ]
+  },
+  {
+    "source_id": "product_guide",
+    "title": "Document Intelligence Product Guide",
+    "sections": [
+      {
+        "passage_id": "upload_01",
+        "section": "Uploads",
+        "text": "The demo application accepts PDF and DOCX files."
+      },
+      {
+        "passage_id": "upload_02",
+        "section": "Uploads",
+        "text": "Files larger than 25 MB are rejected by the demo upload endpoint."
+      },
+      {
+        "passage_id": "chat_01",
+        "section": "Chat",
+        "text": "The chat endpoint supports streamed responses."
+      },
+      {
+        "passage_id": "chat_02",
+        "section": "Chat",
+        "text": "The client should display citations when the backend returns source metadata."
+      },
+      {
+        "passage_id": "session_01",
+        "section": "Sessions",
+        "text": "Conversation history is scoped to the authenticated user."
+      },
+      {
+        "passage_id": "session_02",
+        "section": "Sessions",
+        "text": "Changing a session identifier must not grant access to another user's history."
+      },
+      {
+        "passage_id": "delete_01",
+        "section": "Documents",
+        "text": "Deleting a document should remove it from the listing."
+      },
+      {
+        "passage_id": "delete_02",
+        "section": "Documents",
+        "text": "Deleting a document should invalidate cached answers that depend on it."
+      },
+      {
+        "passage_id": "eval_01",
+        "section": "Evaluation",
+        "text": "Evaluation runs should record dataset version, configuration, model identifiers, metrics, and timestamp."
+      },
+      {
+        "passage_id": "cache_01",
+        "section": "Caching",
+        "text": "Cache keys should include the authenticated user's access context."
+      },
+      {
+        "passage_id": "cache_02",
+        "section": "Caching",
+        "text": "Cache keys should include the index version."
+      },
+      {
+        "passage_id": "citation_01",
+        "section": "Citations",
+        "text": "A citation must refer to retrieved evidence."
+      },
+      {
+        "passage_id": "citation_02",
+        "section": "Citations",
+        "text": "A user must be authorized to access a cited source."
+      },
+      {
+        "passage_id": "privacy_01",
+        "section": "Privacy",
+        "text": "Logs should avoid storing full document contents."
+      },
+      {
+        "passage_id": "privacy_02",
+        "section": "Privacy",
+        "text": "Logs should avoid storing access tokens, passwords, or unnecessary personal data."
+      },
+      {
+        "passage_id": "health_01",
+        "section": "Health Checks",
+        "text": "The health endpoint must not expose credentials or environment secrets."
+      },
+      {
+        "passage_id": "health_02",
+        "section": "Health Checks",
+        "text": "The health endpoint must not expose private document text."
+      },
+      {
+        "passage_id": "auth_01",
+        "section": "Authentication",
+        "text": "Protected API routes require a valid authenticated session."
+      },
+      {
+        "passage_id": "upload_03",
+        "section": "Uploads",
+        "text": "Uploaded documents must be associated with the authenticated user's account."
+      },
+      {
+        "passage_id": "stream_01",
+        "section": "Streaming",
+        "text": "The streaming client must handle partial chunks and a clean end-of-stream event."
+      }
+    ]
+  },
+  {
+    "source_id": "finance_policy",
+    "title": "Sample Finance Policy",
+    "sections": [
+      {
+        "passage_id": "invoice_01",
+        "section": "Invoices",
+        "text": "Invoices should include a supplier name, invoice date, and invoice number."
+      },
+      {
+        "passage_id": "invoice_02",
+        "section": "Invoices",
+        "text": "Invoices above 2,000 currency units require finance-manager approval."
+      },
+      {
+        "passage_id": "payment_01",
+        "section": "Payments",
+        "text": "Approved invoices are scheduled for payment within 15 business days."
+      },
+      {
+        "passage_id": "travel_01",
+        "section": "Travel",
+        "text": "Meal reimbursement is capped at 40 currency units per travel day."
+      },
+      {
+        "passage_id": "budget_01",
+        "section": "Budgets",
+        "text": "Department budgets are reviewed quarterly."
+      },
+      {
+        "passage_id": "vendor_01",
+        "section": "Vendors",
+        "text": "New vendors must pass the standard vendor review before payment."
+      },
+      {
+        "passage_id": "tax_01",
+        "section": "Tax",
+        "text": "Tax-related records must be retained for seven years."
+      },
+      {
+        "passage_id": "receipt_01",
+        "section": "Receipts",
+        "text": "Receipts must be attached to expense claims when available."
+      },
+      {
+        "passage_id": "currency_01",
+        "section": "Currency",
+        "text": "Foreign-currency expenses must include the original amount and conversion rate."
+      },
+      {
+        "passage_id": "approval_01",
+        "section": "Approvals",
+        "text": "An approver must not approve their own expense claim."
+      },
+      {
+        "passage_id": "refund_01",
+        "section": "Refunds",
+        "text": "Refund requests require the original transaction reference."
+      },
+      {
+        "passage_id": "close_01",
+        "section": "Closing",
+        "text": "Month-end close tasks should be completed by the fifth business day."
+      },
+      {
+        "passage_id": "purchase_01",
+        "section": "Purchases",
+        "text": "Purchase orders must be created before a non-emergency purchase."
+      },
+      {
+        "passage_id": "audit_01",
+        "section": "Audit",
+        "text": "Finance approvals must be recorded in the audit trail."
+      },
+      {
+        "passage_id": "recon_01",
+        "section": "Reconciliation",
+        "text": "Bank reconciliations are performed monthly."
+      },
+      {
+        "passage_id": "petty_01",
+        "section": "Petty Cash",
+        "text": "Petty cash transactions require a dated receipt."
+      },
+      {
+        "passage_id": "travel_02",
+        "section": "Travel",
+        "text": "International travel requires manager approval before booking."
+      },
+      {
+        "passage_id": "budget_02",
+        "section": "Budgets",
+        "text": "Budget owners must explain variances greater than 10 percent."
+      },
+      {
+        "passage_id": "invoice_03",
+        "section": "Invoices",
+        "text": "Duplicate invoices should be flagged before payment."
+      },
+      {
+        "passage_id": "vendor_02",
+        "section": "Vendors",
+        "text": "Vendor bank-detail changes require independent verification."
+      }
+    ]
+  },
+  {
+    "source_id": "engineering_handbook",
+    "title": "Engineering Handbook",
+    "sections": [
+      {
+        "passage_id": "review_01",
+        "section": "Code Review",
+        "text": "Pull requests require at least one approving reviewer."
+      },
+      {
+        "passage_id": "test_01",
+        "section": "Testing",
+        "text": "New business logic should include automated tests."
+      },
+      {
+        "passage_id": "ci_01",
+        "section": "CI",
+        "text": "The continuous integration pipeline runs linting and unit tests."
+      },
+      {
+        "passage_id": "release_01",
+        "section": "Releases",
+        "text": "A release candidate must pass required CI checks before release."
+      },
+      {
+        "passage_id": "rollback_01",
+        "section": "Rollback",
+        "text": "Services must document a rollback procedure."
+      },
+      {
+        "passage_id": "api_01",
+        "section": "API Design",
+        "text": "Public API changes must be documented."
+      },
+      {
+        "passage_id": "dep_01",
+        "section": "Dependencies",
+        "text": "Dependency updates should be checked for known vulnerabilities."
+      },
+      {
+        "passage_id": "secret_01",
+        "section": "Secrets",
+        "text": "API keys must not be stored in source code."
+      },
+      {
+        "passage_id": "branch_01",
+        "section": "Branches",
+        "text": "Feature branches should be rebased or merged regularly."
+      },
+      {
+        "passage_id": "docs_01",
+        "section": "Documentation",
+        "text": "Behavior-changing configuration options must be documented."
+      },
+      {
+        "passage_id": "perf_01",
+        "section": "Performance",
+        "text": "Performance regressions should be measured against a recorded baseline."
+      },
+      {
+        "passage_id": "incident_01",
+        "section": "Incidents",
+        "text": "Customer-impacting incidents require a post-incident review."
+      },
+      {
+        "passage_id": "observability_01",
+        "section": "Observability",
+        "text": "Services should expose health and readiness checks."
+      },
+      {
+        "passage_id": "db_01",
+        "section": "Database",
+        "text": "Schema migrations must include a rollback or recovery plan."
+      },
+      {
+        "passage_id": "review_02",
+        "section": "Code Review",
+        "text": "Review comments should identify the issue and a suggested improvement."
+      },
+      {
+        "passage_id": "test_02",
+        "section": "Testing",
+        "text": "Critical regression tests should run in CI."
+      },
+      {
+        "passage_id": "version_01",
+        "section": "Versioning",
+        "text": "Breaking API changes require a versioning strategy."
+      },
+      {
+        "passage_id": "security_01",
+        "section": "Security",
+        "text": "Authentication and authorization must be checked server-side."
+      },
+      {
+        "passage_id": "cache_01",
+        "section": "Caching",
+        "text": "Cache invalidation behavior must be tested after source updates."
+      },
+      {
+        "passage_id": "ownership_01",
+        "section": "Ownership",
+        "text": "Each production service must have a named owning team."
+      }
+    ]
+  }
+]

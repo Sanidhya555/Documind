@@ -1,0 +1,36 @@
+{
+  "qa_required": [
+    "id",
+    "dataset",
+    "dataset_version",
+    "query",
+    "answerable",
+    "expected_behavior",
+    "reference_answer",
+    "relevant_source_ids",
+    "relevant_passage_ids",
+    "category",
+    "difficulty"
+  ],
+  "security_fields": {
+    "presidio_pii": [
+      "id",
+      "text",
+      "expected_entities"
+    ],
+    "prompt_injection": [
+      "id",
+      "text",
+      "is_malicious",
+      "category"
+    ],
+    "access_control": [
+      "id",
+      "principal",
+      "resource_owner",
+      "action",
+      "expected_allow"
+    ]
+  },
+  "rule": "JSONL means one JSON object per line. Human-review all labels. Synthetic cases are for initial validation only."
+}

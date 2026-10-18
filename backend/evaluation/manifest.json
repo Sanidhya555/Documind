@@ -1,0 +1,147 @@
+{
+  "version": "2.0.0",
+  "case_count_per_stage": 100,
+  "stage_count": 21,
+  "total_cases": 2100,
+  "stages": [
+    {
+      "name": "access_control",
+      "dataset": "datasets/access_control.jsonl",
+      "case_count": 100,
+      "description": "Authorization and document ownership boundaries."
+    },
+    {
+      "name": "adaptive_retrieval",
+      "dataset": "datasets/adaptive_retrieval.jsonl",
+      "case_count": 100,
+      "description": "Evidence assessment, score-based context sizing, and bounded retrieval decisions."
+    },
+    {
+      "name": "api",
+      "dataset": "datasets/api.jsonl",
+      "case_count": 100,
+      "description": "Query request validation, defaults, and input limits."
+    },
+    {
+      "name": "cache",
+      "dataset": "datasets/cache.jsonl",
+      "case_count": 100,
+      "description": "Cache replay, scope isolation, invalidation, and capacity behavior."
+    },
+    {
+      "name": "chunking",
+      "dataset": "datasets/chunking.jsonl",
+      "case_count": 100,
+      "description": "Text preservation, configured chunk bounds, and overlap behavior."
+    },
+    {
+      "name": "citation_validation",
+      "dataset": "datasets/citation_validation.jsonl",
+      "case_count": 100,
+      "description": "Evidence membership and authorization for cited sources."
+    },
+    {
+      "name": "embedding",
+      "dataset": "datasets/embedding.jsonl",
+      "case_count": 100,
+      "description": "Embedding shape, deterministic fallback, finiteness, and normalization."
+    },
+    {
+      "name": "end_to_end",
+      "dataset": "datasets/end_to_end.jsonl",
+      "case_count": 100,
+      "description": "A query through retrieval, prompt construction, generation contract, and output checks."
+    },
+    {
+      "name": "generation",
+      "dataset": "datasets/generation.jsonl",
+      "case_count": 100,
+      "description": "Grounded response formatting, faithfulness scoring, and answer-length adaptation."
+    },
+    {
+      "name": "hybrid_retrieval",
+      "dataset": "datasets/hybrid_retrieval.jsonl",
+      "case_count": 100,
+      "description": "Dense and sparse retrieval fusion, access filtering, score ordering, and top-k bounds."
+    },
+    {
+      "name": "ingestion",
+      "dataset": "datasets/ingestion.jsonl",
+      "case_count": 100,
+      "description": "Loader routing, unsupported formats, and extracted-text marker preservation."
+    },
+    {
+      "name": "laya",
+      "dataset": "datasets/laya.jsonl",
+      "case_count": 100,
+      "description": "Laya decision delegation and deterministic fallback behavior."
+    },
+    {
+      "name": "llm",
+      "dataset": "datasets/llm.jsonl",
+      "case_count": 100,
+      "description": "Provider request contracts and per-query output token budgets."
+    },
+    {
+      "name": "memory",
+      "dataset": "datasets/memory.jsonl",
+      "case_count": 100,
+      "description": "Short-term turn limits and persistent session/message storage."
+    },
+    {
+      "name": "presidio_pii",
+      "dataset": "datasets/presidio_pii.jsonl",
+      "case_count": 100,
+      "description": "PII detection before query data enters the RAG pipeline."
+    },
+    {
+      "name": "prompt_injection",
+      "dataset": "datasets/prompt_injection.jsonl",
+      "case_count": 100,
+      "description": "Direct, indirect, obfuscated, and benign-lookalike input handling."
+    },
+    {
+      "name": "query_expansion",
+      "dataset": "datasets/query_expansion.jsonl",
+      "case_count": 100,
+      "description": "Original-query preservation, bounded alternatives, and malformed-output fallback."
+    },
+    {
+      "name": "reranking",
+      "dataset": "datasets/reranking.jsonl",
+      "case_count": 100,
+      "description": "Candidate ordering, top-k bounds, and graceful model-unavailable fallback."
+    },
+    {
+      "name": "retrieval",
+      "dataset": "datasets/retrieval.jsonl",
+      "case_count": 100,
+      "description": "Relevant-passage recall, authorization filtering, and ranked result shape."
+    },
+    {
+      "name": "security",
+      "dataset": "datasets/security.jsonl",
+      "case_count": 100,
+      "description": "Layered prompt-injection, PII, citation, and access-control protections."
+    },
+    {
+      "name": "vector_store",
+      "dataset": "datasets/vector_store.jsonl",
+      "case_count": 100,
+      "description": "Index insert/search behavior, score ordering, and metadata association."
+    }
+  ],
+  "auxiliary_datasets": [
+    {
+      "name": "eval_set_v2",
+      "path": "datasets/eval_set_v2.json",
+      "case_count": 240,
+      "description": "Legacy labeled QA/security set retained for backwards-compatible evaluator endpoints."
+    }
+  ],
+  "notes": [
+    "Every stage dataset has exactly 100 uniquely identified JSONL cases.",
+    "LLM and Laya provider calls are mocked/contract-tested by default; no external service is contacted by the dashboard evaluation.",
+    "Security labels are retained as authored. Reported false positives and misses remain visible in the case results."
+  ]
+}

@@ -1,0 +1,13 @@
+dataset_file,case_count,purpose
+ingestion.jsonl,100,Ingestion fixture specifications
+chunking.jsonl,100,Chunk preservation
+retrieval.jsonl,100,Retrieval questions
+generation.jsonl,100,Generation reference checks
+adaptive_retrieval.jsonl,100,Adaptive action decisions
+end_to_end.jsonl,100,Full pipeline questions
+reranking.jsonl,100,Reranking
+query_expansion.jsonl,100,Query expansion
+citation_validation.jsonl,100,Citation validity
+presidio_pii.jsonl,100,PII detection
+prompt_injection.jsonl,100,Injection and benign lookalikes
+access_control.jsonl,100,Authorization

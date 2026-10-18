@@ -1,0 +1,17 @@
+# Never bake local credentials, uploads, indexes, or conversation history into the image.
+.env
+.env.*
+data/
+
+# Keep only application sources and the evaluation/test code in the build context.
+.git/
+.venv/
+venv/
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+evaluation/results/
+.coverage*
+*.log
