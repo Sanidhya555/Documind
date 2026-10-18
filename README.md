@@ -1,4 +1,4 @@
-# Enterprise Document Intelligence v3
+# Enterprise Document Intelligence 
 
 A Retrieval-Augmented Generation (RAG) application for uploading, indexing, and querying enterprise documents. It combines a FastAPI backend, Docling document conversion, adaptive hybrid retrieval, layered security, a React dashboard, and a versioned evaluation suite.
 
@@ -68,8 +68,6 @@ Each query response now includes `retrieval_decision` and `evidence_confidence` 
 **Query drift prevention**: expanded queries are always re-ranked against the *original* query, not the expansion. The retry budget is hard-capped at `ADAPTIVE_MAX_ATTEMPTS` (default 2).
 
 **Laya integration**: `LayaDecisionPolicy` wraps the deterministic policy and calls the Laya Router when `LAYA_ENABLED=true` and the `laya` package is installed. The system always falls back to deterministic if Laya is unavailable, errors, or returns an invalid result. Laya is **disabled by default** — there is no dependency on it at runtime.
-
-> **Note on Laya**: The `laya` package is optional and is not in `requirements.txt`. The integration uses the `convaiinnovations/laya` Router API (`router.predict(state, questions)`). Install the package and set `LAYA_ENABLED=true` to activate it. If Laya is disabled or fails, the deterministic policy remains available.
 
 ### 2. Security
 
