@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+node_modules/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.cache/
+build/
+dist/
+.env
+.env.*
+!.env.example
+.env.local
+.env.production
+
+# Data (large files and sensitive data)
+backend/data/embeddings/faiss.index
+backend/data/embeddings/chunks.npy
+backend/data/raw/*.pdf
+backend/data/raw/*.docx
+backend/data/memory.db
+*.log
+logs/
+
+# Keep gitkeeps
+!backend/data/embeddings/.gitkeep
+!backend/data/raw/.gitkeep
+
+# IDE and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
